@@ -1,0 +1,10 @@
+#!/bin/sh
+echo $@
+
+if [ "$1" = 'counter' ]; then
+	/counter.py
+else
+	exec $@
+fi
+
+

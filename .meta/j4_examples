@@ -1,0 +1,36 @@
+example 1:
+docker run -ti --rm ubuntu:14.04 /bin/bash
+
+example 2:
+docker build -t devatldz:example2 ./example2/
+
+example 3:
+docker run -ti --rm devatldz:example2 /bin/bash
+
+example 4:
+docker build -t devatldz:example4 ./example4/
+
+example 5:
+docker run -ti --rm devatldz:example4 /bin/bash
+
+example 6:
+docker build -t devatldz:example6 ./example6/
+
+example 7:
+docker run -d --name devexample6 --hostname mytesthost -P devatldz:example6
+
+example 8:
+docker build -t j4b0l/quick-share:latest ./example8/quick-share/ && ./example8/quick-share.sh
+
+example 9:
+# This one is a bit more complicated
+
+example 10:
+docker run -P --name publicly_visible_jenkins -d aespinosa/jenkins:latest
+
+example 11:
+docker run -P -ti --rm -v `pwd`/jenkins_home:/jenkins aespinosa/jenkins:latest
+
+example 12:
+docker run -P -ti --rm -v `pwd`/jenkins_home:/jenkins aespinosa/jenkins:latest
+

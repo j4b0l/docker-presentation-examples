@@ -1,0 +1,13 @@
+#!/bin/sh
+echo $@
+
+if [ "$1" = 'monitor' ]; then
+	while [ true ]; do
+		monitor_environments.pl
+		sleep 20
+	done
+else 
+	exec $@
+fi
+
+
